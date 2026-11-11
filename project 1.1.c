@@ -245,7 +245,7 @@ int main(void) {
         while (playAgain == true) {
             isplayerTurn = true;
             playerTurn(board);
-            if (checkGameState(board, &playAgain, &gameState, isplayerTurn)) {
+            if (checkGameState(board, &playAgain, &gameState, isplayerTurn)) {        //checkGamestate checks if there was a winner and who won. if function returns true, the inner loops exits and games starts over from the beggining
                 break;
             }
 
